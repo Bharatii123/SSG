@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-30T18:19:38 BST" name="Suite" finished-at="2022-07-30T18:20:13 BST" duration-ms="34601">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.filterSportsFeatureRunner@1aa7ecca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.filterSportsListValidationFeatureRunner@59309333]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.filterSportsfilterOutlineFeatureRunner@5876a9af]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.selectAnalysisFeatureRunner@79924b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-07-30T18:19:38 BST" name="Test" finished-at="2022-07-30T18:20:13 BST" duration-ms="34601">
+      <class name="com.cucumber.framework.runner.filterSportsfilterOutlineFeatureRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.framework.runner.filterSportsfilterOutlineFeatureRunner@5876a9af]" started-at="2022-07-30T18:20:04 BST" name="setUpClass" finished-at="2022-07-30T18:20:04 BST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51dae791]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.filterSportsfilterOutlineFeatureRunner@5876a9af]" started-at="2022-07-30T18:20:04 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-30T18:20:13 BST" duration-ms="8849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid Sports Filter with Outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Picks wise Sports Filter Outline"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.filterSportsfilterOutlineFeatureRunner@5876a9af]" started-at="2022-07-30T18:20:13 BST" name="tearDownClass" finished-at="2022-07-30T18:20:13 BST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.framework.runner.filterSportsfilterOutlineFeatureRunner -->
+      <class name="com.cucumber.framework.runner.filterSportsListValidationFeatureRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.framework.runner.filterSportsListValidationFeatureRunner@59309333]" started-at="2022-07-30T18:19:57 BST" name="setUpClass" finished-at="2022-07-30T18:19:57 BST" duration-ms="18" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51dae791]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.filterSportsListValidationFeatureRunner@59309333]" started-at="2022-07-30T18:19:57 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-30T18:20:04 BST" duration-ms="6503" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid Sports Filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Picks wise Sports Filter List"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [KBO] but found [Lacrosse]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [KBO] but found [Lacrosse]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.cucumber.framework.stepdefinition.SportsFilter.i_can_see_an_available_list_of_valid_sports(SportsFilter.java:72)
+at ✽.I can see an available list of valid Sports(classpath:featurefile/filterSportsListValidation.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.filterSportsListValidationFeatureRunner@59309333]" started-at="2022-07-30T18:20:04 BST" name="tearDownClass" finished-at="2022-07-30T18:20:04 BST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.framework.runner.filterSportsListValidationFeatureRunner -->
+      <class name="com.cucumber.framework.runner.selectAnalysisFeatureRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.framework.runner.selectAnalysisFeatureRunner@79924b]" started-at="2022-07-30T18:19:38 BST" name="setUpClass" finished-at="2022-07-30T18:19:38 BST" duration-ms="310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51dae791]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.selectAnalysisFeatureRunner@79924b]" started-at="2022-07-30T18:19:38 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-30T18:19:51 BST" duration-ms="12678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid Sports Filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Select Analysis Tab"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.selectAnalysisFeatureRunner@79924b]" started-at="2022-07-30T18:19:51 BST" name="tearDownClass" finished-at="2022-07-30T18:19:52 BST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.framework.runner.selectAnalysisFeatureRunner -->
+      <class name="com.cucumber.framework.runner.filterSportsFeatureRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.framework.runner.filterSportsFeatureRunner@1aa7ecca]" started-at="2022-07-30T18:19:52 BST" name="setUpClass" finished-at="2022-07-30T18:19:52 BST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51dae791]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.framework.runner.filterSportsFeatureRunner@1aa7ecca]" started-at="2022-07-30T18:19:52 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-30T18:19:57 BST" duration-ms="5721" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid Sports Filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Picks wise Sports Filter"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.framework.runner.filterSportsFeatureRunner@1aa7ecca]" started-at="2022-07-30T18:19:57 BST" name="tearDownClass" finished-at="2022-07-30T18:19:57 BST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.framework.runner.filterSportsFeatureRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
